@@ -40,7 +40,7 @@ current_date = date.today()
 current_date = current_date.strftime("%m/%d/%Y") # mm/dd/YY
 
 
-#The Receipt printing (the output to console).
+# Output to console.
 print('\n----------Welcome to WollPay!----------\n')
 print('Transfer:       ',
       input_currency,
@@ -55,7 +55,7 @@ print('Rate:           ', rate)
 print('\nThank you for being a WollPay customer!')
 print('----------------WollPay----------------\n\n')
 
-# The receipt printing in receipt.txt file.
+# The printing in receipt.txt file.
 with open('receipt.txt', 'w') as f:
 	f.write('\n----------Welcome to WollPay!----------\n')
 	f.write('\nTransfer:       '
@@ -73,24 +73,7 @@ with open('receipt.txt', 'w') as f:
 	f.write('\n\nThank you for being a WollPay customer!\n')
 	f.write('----------------WollPay----------------\n\n')
 	 
-# # The  writing Transaction to the log.txt file.
-# with open('log.txt', 'a') as f:
-# 	f.write('\n\nThe new Transaction')
-# 	f.write('\nTransfer:       '
-# 	        + input_currency 
-# 	        + ' '
-# 	        + input_summ
-#               + ' --> ' 
-# 	        + output_currency
-# 		    + ' ' 
-# 	        + output_summ)
-# 	f.write('\nTransaction ID: ' + transaction_ID)
-# 	f.write('\nDate&Time:      ' + current_time + ' (GMT+2)')
-# 	f.write('\nRate:           ' + rate)
-# 	f.write('\nThe Transaction was finished successful.\n')
-# 	f.write('Comment:   ' + comment)
-
-# The  writing Transaction to the log.csv file.
+# The printing in the log.csv file.
 row = [transaction_ID,
        cid,
        current_date,
