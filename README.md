@@ -1,2 +1,2 @@
 # receipt
-# version 02.07 modified
+# version 02.08 modified
