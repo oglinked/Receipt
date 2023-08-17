@@ -1,3 +1,3 @@
 # receipt
-# version 03.03 modified
-# This version is without FIELDS VALIDATION also 
+# version 03.04 modified
+# This version is with FIELDS VALIDATION 
