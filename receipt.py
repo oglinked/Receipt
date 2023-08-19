@@ -65,9 +65,10 @@ while i != 'q':
     print('Hello Host!')
     print('Please input the Data of the new Transaction.')
     print('\nFull Path to log.csv file is: \n' + os.path.abspath(log_name))
-    input('\nClick "ENTER" to input the Data: ')
+    print('\n))
     
     # The Input Data Block with partly Validation.
+    # print('\n###Enter transaction details###))
     cid = input('CID: ')
     input_currency = input('Currency IN: ')
     input_currency = str_valid_to_upper(input_currency)
@@ -150,10 +151,10 @@ while i != 'q':
     # log.csv file data:
     # field names:
     fields = [
-            'TransactionID',
+            'TID', #TransactionID
             'Date',
             'Time',
-            'TZ',
+            'TZ', #TimeZone
             'CID',
             'Currency1',
             'Amount1',
@@ -201,6 +202,6 @@ while i != 'q':
             csvwriter.writerow(fields) # Writing the fields.
             csvwriter.writerow(row)
     
-    i = input('\nAnother Transaction? (Click "q" to exit) : ')
+    i = input('\nAnother Transaction? (Press "q" to exit, "Enter" to continue) : ')
 
 input('Click "ENTER" to exit: ')
