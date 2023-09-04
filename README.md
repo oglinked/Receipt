@@ -1,4 +1,3 @@
 # receipt
-# version 03.09 modified
+# version 03.11 modified
 # This version is with FIELDS VALIDATION
-# Finished to production
