@@ -30,7 +30,7 @@ def cid_validation(cid):
     cid = cyrillic_presence_test(cid, message_cyrillic)
     cid = remove_tabs_and_whitespaces(cid)
     if len(cid) < 1: # Minimum 1 character should be present.
-        print('Error: To few characters inputed.')
+        print('Error: Too few characters inputed.')
         cid = input('Repeat Input: ')
         cid = cid_validation(cid) # Recursion.
     cid = valid_isalnum(cid) # To test the presence of
@@ -46,7 +46,7 @@ def valid_isalnum(str_to_valid):
     if str_to_valid.isalnum():
         pass
     else:
-        print('Error: Only latin latters and decimal digits \
+        print('Error: Only Latin latters and decimal digits \
 are allowed in this field.')
         str_to_valid = input('Repeat Input: ')
         str_to_valid = cid_validation(str_to_valid) # Go to CID validation.
@@ -125,14 +125,14 @@ def valid_decimal(number):
 def remove_tabs(string):
     """Code to remove tabulation."""
     if '\t' in string:
-        print('Warning: Inputed Tabs characters was removed!')
+        print('Warning: Input Tabs characters were removed!')
     return string.replace('\t', '')
 
 
 def remove_whitespaces(string):
     """Code to remove whitespaces"""
     if ' ' in string:
-        print('Warning: Inputed whitespaces was removed!')
+        print('Warning: Input whitespaces were removed!')
     return string.replace(" ", "")
 
 
