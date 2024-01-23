@@ -2,3 +2,4 @@
 # Be carefull:
 # receipt repository is now deprecated.
 # Please GOTO:
+https://github.com/oglinked/wollpay
